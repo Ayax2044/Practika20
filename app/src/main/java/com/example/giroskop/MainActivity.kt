@@ -36,9 +36,9 @@ class MainActivity : AppCompatActivity() {
                     var y = sensorEvent.values[1].toInt().toDouble() / 100
                     var z = sensorEvent.values[2].toInt().toDouble() / 100
 
-                    tx.setText(" ${x.toString()}")
-                    ty.setText(" ${y.toString()}")
-                    tz.setText(" ${z.toString()}")
+                    tx.setText(x.toString())
+                    ty.setText(y.toString())
+                    tz.setText(z.toString())
                 }
 
                 override fun onAccuracyChanged(sensor: Sensor, int: Int) {}
